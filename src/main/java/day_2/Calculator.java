@@ -11,7 +11,7 @@ public class Calculator {
         System.out.println(divade(a,b));
     }
 
-    private static double divade(double a, double b) {
+    public static double divade(double a, double b) {
         return a/b;
     }
 

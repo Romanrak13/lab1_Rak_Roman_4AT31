@@ -1,11 +1,25 @@
 package day_3;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class mapMain {
     public static void main(String[] args) {
-        String inputeString = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+        //3) Given: String with big text (more than 1000 words).
+        // Write a method that calculates the numbers of words for each letter that starts the word.
+        String inputString = "We need a measure to summarize the variability " +
+                "of these two distributions. The summary metrics we've learned " +
+                "so far don't tell us anything about variability. The mean, the " +
+                "median, and the mode of distribution";
+        Map<String, Integer> result = new HashMap<>();
+        Arrays.stream(inputString.split(" ")).forEach(w -> {
+            String key = String.valueOf(w.charAt(0));
+            result.putIfAbsent(key, 0);
+            result.put(key, result.get(key) + 1);
+        });
 
+        System.out.println("Task 3");
+        System.out.println(result);
     }
-    Arrays.stream(inputeString.split(""))
 }
