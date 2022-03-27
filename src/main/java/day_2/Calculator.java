@@ -15,15 +15,15 @@ public class Calculator {
         return a/b;
     }
 
-    private static double mult(double a, double b) {
+    public static double mult(double a, double b) {
         return a*b;
     }
 
-    private static double minus(double a, double b) {
+    public static double minus(double a, double b) {
         return a-b;
     }
 
-    private static double add(double a, double b) {
+    public static double add(double a, double b) {
         return a+b;
     }
 }

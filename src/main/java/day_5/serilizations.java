@@ -1,10 +1,10 @@
 package day_5;
 
+import day_4.reflection.MyAnyCustomClass;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import day_4.reflection.MyAnyCustomClass;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -13,7 +13,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
 
-public class serilizations {
+
+ public class serilizations {
     public static void main(String[] args) throws JSONException {
         //Make some complex models with few fields.
         // Make it serializable.
@@ -71,3 +72,4 @@ public class serilizations {
         System.out.println(new JSONObject(jsonMaps));
     }
 }
+
