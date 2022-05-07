@@ -22,11 +22,11 @@ public class SignInPO {
     }
 
     public void insertLogin() {
-        driver.findElement(By.xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input")).sendKeys("yenot.programer@gmail.com");
+        driver.findElement(By.xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input")).sendKeys("test.test@gmail.com");
     }
 
     public void insertPassword() {
-        driver.findElement(By.xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[2]/div/label/input")).sendKeys("mp3np4lk78");
+        driver.findElement(By.xpath("/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[2]/div/label/input")).sendKeys("1qaz!QAZ");
     }
 
 }
